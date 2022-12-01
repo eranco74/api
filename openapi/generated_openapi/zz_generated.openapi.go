@@ -31626,6 +31626,13 @@ func schema_openshift_api_machine_v1beta1_GCPMachineProviderSpec(ref common.Refe
 							Format:      "",
 						},
 					},
+					"enableSecureBoot": {
+						SchemaProps: spec.SchemaProps{
+							Description: "EnableSecureBoot Verify the digital signature of all boot components, and halt the boot process if signature verification fails. If omitted, the platform chooses a default, which is subject to change over time, currently that default is false.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
 				},
 				Required: []string{"canIPForward", "deletionProtection", "serviceAccounts", "machineType", "region", "zone"},
 			},
